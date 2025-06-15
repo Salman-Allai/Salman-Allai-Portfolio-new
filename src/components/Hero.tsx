@@ -1,22 +1,15 @@
 import { Download } from 'lucide-react';
 
 const Hero = () => {
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   const handleDownload = () => {
-  const link = document.createElement('a');
-  link.href = '/SalmanAllaiCV.pdf';
-  link.download = 'SalmanAllaiCV.pdf';
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-};
-
+    const link = document.createElement('a');
+    link.href = '/SalmanAllaiCV.pdf';
+    link.setAttribute('download', 'SalmanAllaiCV.pdf');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16 lg:pt-20">
@@ -39,23 +32,25 @@ const Hero = () => {
             Passionate about creating exceptional digital experiences with modern web technologies
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <button
-              onClick={scrollToContact}
-              className="bg-[#00adb5] hover:bg-[#00adb5]/90 text-[#eeeeee] px-8 py-3 rounded-full font-bold text-lg transition-all duration-200 hover:scale-105 font-['Poppins']"
-            >
-              Hire me
-            </button>
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full">
             <button
               type="button"
-              onClick={handleDownload}
-              title="Download CV" // <-- adds a tooltip and helps accessibility
-              aria-label="Download CV" // <-- helps screen readers
-              className="cursor-pointer bg-[#393e46]/75 hover:bg-[#393e46] text-[#eeeeee] px-8 py-3 rounded-full font-bold text-lg transition-all duration-200 hover:scale-105 font-['Poppins'] flex items-center gap-2"
+              className="px-4 py-3 sm:px-8 sm:py-3 bg-[#00adb5] hover:bg-[#00adb5]/90 text-[#eeeeee] rounded-full font-bold text-lg transition-all duration-200 hover:scale-105 font-['Poppins']"
+              style={{ minWidth: '140px' }} // Set to match Download CV button width on mobile
             >
-              <Download size={20} />
-              Download CV
+              Hire Me
             </button>
+            <a
+              href="/SalmanAllaiCV.pdf"
+              download
+              className="no-underline flex w-[223px] pt-[10px] pr-[16px] pb-[10px] pl-[32px] gap-[10px] items-center shrink-0 flex-nowrap bg-[rgba(57,62,70,0.75)] rounded-[24px] relative z-[15] cursor-pointer"
+              title="Download CV"
+              aria-label="Download CV"
+            >
+              <span className="h-[27px] shrink-0 basis-auto font-['Poppins'] text-[18px] font-bold leading-[27px] text-[#eeeeee] relative text-left whitespace-nowrap z-[16]">
+                Download CV
+              </span>
+            </a>
           </div>
         </div>
 
@@ -64,7 +59,7 @@ const Hero = () => {
           <div className="relative">
             <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-[#00adb5]/30">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/7124c6a0df884b6ba3cab28862636368/2d419a692b2049aba05e5fe42b5fa3586928a1bd?placeholderIfAbsent=true"
+                src="https://ik.imagekit.io/rsoncnocz/ChatGPT%20Image%20Jun%2015,%202025,%2011_59_04%20PM.png?updatedAt=1750012203199?placeholderIfAbsent=true"
                 alt="Salman Allai - Full Stack Developer"
                 className="w-full h-full object-cover"
               />
