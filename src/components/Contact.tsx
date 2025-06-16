@@ -30,10 +30,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'service_9le86ce',    // Replace with your EmailJS service ID
-        'template_tqp8zko',   // Replace with your EmailJS template ID
+        'service_9le86ce',
+        'template_tqp8zko',
         form.current,
-        'OO-qOAVY58D2NqaPb'     // Replace with your EmailJS public key
+        'OO-qOAVY58D2NqaPb'
       )
       .then(
         () => {
@@ -68,7 +68,7 @@ const Contact = () => {
     {
       icon: <MapPin size={24} />,
       title: 'Location',
-      value: 'Srinagar,Jammu & Kashmir,India',
+      value: 'Srinagar, Jammu & Kashmir, India',
       link: '#'
     }
   ];
@@ -84,9 +84,9 @@ const Contact = () => {
               <br />
               <span className="text-[#00adb5]">mind?</span>
             </h2>
-            
+
             <p className="text-lg text-[#eeeeee]/75 mb-8 leading-relaxed">
-              I'm always interested in new opportunities and exciting projects. 
+              I'm always interested in new opportunities and exciting projects.
               Let's discuss how we can work together to bring your ideas to life.
             </p>
 
@@ -105,7 +105,7 @@ const Contact = () => {
                     <h3 className="text-[#eeeeee] font-bold font-['Poppins']">
                       {info.title}
                     </h3>
-                    <p className="text-[#eeeeee]/75">
+                    <p className="text-[#eeeeee]/75 whitespace-nowrap">
                       {info.value}
                     </p>
                   </div>
@@ -133,7 +133,7 @@ const Contact = () => {
                     required
                   />
                 </div>
-                
+
                 <div>
                   <label htmlFor="email" className="block text-[#eeeeee] font-bold mb-2 font-['Poppins']">
                     Your email
@@ -150,7 +150,7 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              
+
               <div>
                 <label htmlFor="message" className="block text-[#eeeeee] font-bold mb-2 font-['Poppins']">
                   Your Message
@@ -166,7 +166,7 @@ const Contact = () => {
                   required
                 ></textarea>
               </div>
-              
+
               <button
                 type="submit"
                 className="bg-[#00adb5] hover:bg-[#00adb5]/90 text-[#eeeeee] px-8 py-3 rounded-full font-bold text-lg transition-all duration-200 hover:scale-105 font-['Poppins'] flex items-center gap-2"
