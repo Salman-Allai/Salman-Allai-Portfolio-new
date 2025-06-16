@@ -43,13 +43,24 @@ const Hero = () => {
             <a
               href="/SalmanAllaiCV.pdf"
               download
-              className="no-underline flex w-[223px] pt-[10px] pr-[16px] pb-[10px] pl-[32px] gap-[10px] items-center shrink-0 flex-nowrap bg-[rgba(57,62,70,0.75)] rounded-[24px] relative z-[15] cursor-pointer"
+              className="no-underline flex w-[223px] pt-[10px] pr-[16px] pb-[10px] pl-[32px] gap-[10px] items-start md:items-center shrink-0 flex-nowrap bg-[rgba(57,62,70,0.75)] rounded-[24px] relative z-[15] cursor-pointer hover:bg-[rgba(57,62,70,1)] hover:shadow-2xl hover:shadow-[#222831]/80 transition-all duration-200"
               title="Download CV"
               aria-label="Download CV"
             >
-              <span className="h-[27px] shrink-0 basis-auto font-['Poppins'] text-[18px] font-bold leading-[27px] text-[#eeeeee] relative text-left whitespace-nowrap z-[16]">
+              <span className="h-[27px] shrink-0 basis-auto font-['Poppins'] text-[18px] font-bold leading-[27px] text-[#eeeeee] relative text-center md:text-left whitespace-nowrap z-[16]">
                 Download CV
               </span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-6 h-6 text-[#eeeeee]"
+                aria-hidden="true"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m0 0l-6-6m6 6l6-6" />
+              </svg>
             </a>
           </div>
         </div>
