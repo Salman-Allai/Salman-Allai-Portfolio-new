@@ -99,17 +99,17 @@ const Footer = () => {
         </div>
 
         {/* Mobile-only Social Links */}
-        <div className="flex flex-wrap mt-10 gap-6 text-left lg:hidden">
+        <div className="flex flex-wrap mt-10 gap-4 text-left lg:hidden">
           {socialLinks.map((social, index) => (
             <a
               key={index}
               href={social.href}
               aria-label={social.label}
-              className="w-12 h-12 bg-[#393e46] hover:bg-[#00adb5] rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110"
+              className="w-8 h-8 sm:w-10 sm:h-10 bg-[#393e46] hover:bg-[#00adb5] rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {social.icon}
+              <span className="text-[14px]">{social.icon}</span>
             </a>
           ))}
         </div>
