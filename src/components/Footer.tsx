@@ -24,15 +24,17 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#222831] py-12 lg:py-16 relative overflow-hidden">
+    <footer className="bg-[#222831] pt-2 lg:pt-4 relative overflow-hidden">
+      {/* Horizontal Top Border */}
+      <div className="w-full border-t border-[#393e46]"></div>
+
       {/* Decorative Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-4 w-16 h-32 bg-gradient-to-b from-[#00adb5]/20 to-transparent rounded-lg transform rotate-12 hidden lg:block"></div>
         <div className="absolute bottom-1/4 right-8 w-12 h-24 bg-gradient-to-t from-[#00adb5]/20 to-transparent rounded-lg transform -rotate-12 hidden lg:block"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-px h-full bg-gradient-to-b from-transparent via-[#393e46]/30 to-transparent"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-[#eeeeee]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-[#eeeeee] py-10 lg:py-16">
         {/* Grid Layout */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-left">
           {/* Company Info */}
@@ -76,8 +78,8 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-[#00adb5]">Contact Info</h3>
             <ul className="space-y-2 font-['Poppins'] text-sm">
               <li>Email: <a href="mailto:salmanallai@gmail.com" className="hover:text-[#00adb5]">salmanallai@gmail.com</a></li>
-              <li>Phone: <a href="tel:+919876543210" className="hover:text-[#00adb5]">+91 98765 43210</a></li>
-              <li>Location: Srinagar, Jammu & Kashmir, India</li>
+              <li>Phone: <a href="tel:+91 6006214499" className="hover:text-[#00adb5]">+91 6006214499</a></li>
+              <li>Location: Srinagar,Jammu & Kashmir,India</li>
             </ul>
 
             {/* Desktop-only Social Links */}

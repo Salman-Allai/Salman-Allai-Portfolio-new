@@ -63,12 +63,12 @@ const Contact = () => {
       icon: <Phone size={24} />,
       title: 'Phone',
       value: '+91 6006214499',
-      link: 'tel:+15551234567'
+      link: 'tel:+91 6006214499'
     },
     {
       icon: <MapPin size={24} />,
       title: 'Location',
-      value: 'Srinagar J&K,India',
+      value: 'Srinagar,Jammu & Kashmir,India',
       link: '#'
     }
   ];
