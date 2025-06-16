@@ -68,7 +68,7 @@ const Contact = () => {
     {
       icon: <MapPin size={24} />,
       title: 'Location',
-      value: 'Srinagar, Jammu & Kashmir, India',
+      value: 'Srinagar, J&K, India',
       link: '#'
     }
   ];
