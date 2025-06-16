@@ -50,7 +50,7 @@ const Header = () => {
 
       {/* Sliding Mobile Menu with Solid Background */}
       <div
-        className={`fixed top-0 right-0 h-full w-1/2 bg-[#1e1e2f] z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 h-full w-1/2 bg-[#222831] z-50 transform transition-transform duration-300 ease-in-out ${
           isMenuOpen ? 'translate-x-0' : 'translate-x-full'
         } md:hidden shadow-lg border-l border-[#393e46]`}
       >
