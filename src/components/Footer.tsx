@@ -39,7 +39,9 @@ const Footer = () => {
           <div>
             <h2 className="text-2xl font-bold text-[#00adb5] font-['Poppins']">Salman Allai</h2>
             <p className="text-[#eeeeee]/75 mt-2 font-['Poppins']">Full Stack Developer</p>
-            <p className="text-[#eeeeee]/50 text-sm mt-4 font-['Poppins']">Building scalable and elegant web experiences.</p>
+            <p className="text-[#eeeeee]/50 text-sm mt-4 font-['Poppins']">
+              Building scalable and elegant web experiences.
+            </p>
           </div>
 
           {/* Quick Links */}
@@ -77,18 +79,35 @@ const Footer = () => {
               <li>Phone: <a href="tel:+919876543210" className="hover:text-[#00adb5]">+91 98765 43210</a></li>
               <li>Location: Srinagar, Jammu & Kashmir, India</li>
             </ul>
+
+            {/* Desktop-only Social Links */}
+            <div className="hidden lg:flex gap-4 mt-6">
+              {socialLinks.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.href}
+                  aria-label={social.label}
+                  className="w-10 h-10 bg-[#393e46] hover:bg-[#00adb5] rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {social.icon}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
 
-        {/* Social Icons */}
-        <div className="flex flex-wrap mt-10 gap-6 text-left">
+        {/* Mobile-only Social Links */}
+        <div className="flex flex-wrap mt-10 gap-6 text-left lg:hidden">
           {socialLinks.map((social, index) => (
             <a
               key={index}
               href={social.href}
               aria-label={social.label}
               className="w-12 h-12 bg-[#393e46] hover:bg-[#00adb5] rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {social.icon}
             </a>
@@ -96,7 +115,7 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom */}
-        <div className="border-t border-[#393e46] pt-6 mt-10 text-sm text-[#eeeeee]/60 font-['Poppins'] text-left">
+        <div className="border-t border-[#393e46] pt-6 mt-10 text-sm text-[#eeeeee]/60 font-['Poppins'] text-center">
           <p>© 2024 Salman Allai. All rights reserved.</p>
         </div>
       </div>
