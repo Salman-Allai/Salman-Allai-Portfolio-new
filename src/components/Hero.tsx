@@ -1,7 +1,6 @@
 import { Download } from 'lucide-react';
 
 const Hero = () => {
-
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = '/SalmanAllaiCV.pdf';
@@ -22,12 +21,17 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
         {/* Content */}
         <div className="text-center lg:text-left order-2 lg:order-1">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold font-['Poppins'] leading-tight mb-6 lg:mb-8">
-            <span className="text-[#eeeeee]">Full Stack</span>
-            <br />
-            <span className="text-[#00adb5]">Developer</span>
-          </h1>
-          
+          <div className="mb-2 lg:mb-4">
+            <p className="text-xl sm:text-2xl text-[#eeeeee]/75 font-medium font-['Poppins'] mb-2">
+              Hi, I am Mohammad Salman
+            </p>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold font-['Poppins'] leading-tight">
+              <span className="text-[#eeeeee]">Full Stack</span>
+              <br />
+              <span className="text-[#00adb5]">Developer</span>
+            </h1>
+          </div>
+
           <p className="text-lg sm:text-xl text-[#eeeeee]/75 mb-8 lg:mb-12 max-w-2xl mx-auto lg:mx-0">
             Passionate about creating exceptional digital experiences with modern web technologies
           </p>
@@ -36,7 +40,7 @@ const Hero = () => {
             <button
               type="button"
               className="px-4 py-3 sm:px-8 sm:py-3 bg-[#00adb5] hover:bg-[#00adb5]/90 text-[#eeeeee] rounded-full font-bold text-lg transition-all duration-200 hover:scale-105 font-['Poppins']"
-              style={{ minWidth: '140px' }} // Set to match Download CV button width on mobile
+              style={{ minWidth: '140px' }}
             >
               Hire Me
             </button>
