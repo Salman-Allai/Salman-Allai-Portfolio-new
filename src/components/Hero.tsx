@@ -74,7 +74,7 @@ const Hero = () => {
           <div className="relative">
             <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-[#00adb5]/30">
               <img
-                src="https://ik.imagekit.io/rsoncnocz/ChatGPT%20Image%20Jun%2015,%202025,%2011_59_04%20PM.png?updatedAt=1750012203199?placeholderIfAbsent=true"
+                src="https://ik.imagekit.io/rsoncnocz/ChatGPT%20Image%20Jun%2017,%202025,%2006_41_39%20PM.png?updatedAt=1750166052512?placeholderIfAbsent=true"
                 alt="Salman Allai - Full Stack Developer"
                 className="w-full h-full object-cover"
               />
